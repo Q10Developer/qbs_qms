@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QMS Profile-{company}",
+ "creation": "2026-02-18 21:00:08.478679",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "qms_scope",
+  "applicable_standards",
+  "exclusions",
+  "qms_site",
+  "certification_body",
+  "certificate_no",
+  "cert_issue_date",
+  "cert_expiry_date",
+  "management_rep"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "qms_scope",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "QMS Scope",
+   "reqd": 1
+  },
+  {
+   "fieldname": "applicable_standards",
+   "fieldtype": "Small Text",
+   "label": "Applicable Standards"
+  },
+  {
+   "fieldname": "exclusions",
+   "fieldtype": "Small Text",
+   "label": "Exclusions"
+  },
+  {
+   "fieldname": "certification_body",
+   "fieldtype": "Data",
+   "label": "Certification Body"
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "label": "Certificate No"
+  },
+  {
+   "fieldname": "cert_issue_date",
+   "fieldtype": "Date",
+   "label": "Cert Issue Date"
+  },
+  {
+   "fieldname": "cert_expiry_date",
+   "fieldtype": "Date",
+   "label": "Cert Expiry Date"
+  },
+  {
+   "fieldname": "management_rep",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Management Rep",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qms_site",
+   "fieldtype": "Table",
+   "label": "QMS Site",
+   "options": "QMS Site"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-18 21:10:49.400994",
+ "modified_by": "Administrator",
+ "module": "QMS Core",
+ "name": "QMS Profile",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

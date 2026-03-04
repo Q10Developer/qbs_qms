@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-21 15:54:59.161070",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "criteria",
+  "score",
+  "weight",
+  "weighted_score",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "criteria",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Criteria",
+   "options": "Quality\nDelivery\nCost\nResponsiveness\nCompliance\nCertification\nRisk",
+   "reqd": 1
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Int",
+   "label": "Score (1-5)"
+  },
+  {
+   "fieldname": "weighted_score",
+   "fieldtype": "Float",
+   "label": "Weighted Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight%"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-23 19:54:04.284864",
+ "modified_by": "Administrator",
+ "module": "QMS Core",
+ "name": "Supplier Evaluation Criteria",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

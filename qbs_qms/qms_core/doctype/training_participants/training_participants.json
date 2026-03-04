@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-21 16:20:33.780882",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "assessment_conducted",
+  "assessment_result",
+  "effectiveness_verified",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_result",
+   "fieldtype": "Select",
+   "label": "Assessment Result",
+   "options": "Passed\nFailed\nNon-applicable\nNeed Improvement",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "effectiveness_verified",
+   "fieldtype": "Check",
+   "label": "Effectiveness Verified"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "assessment_conducted",
+   "fieldtype": "Check",
+   "label": "Assessment Conducted"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-21 16:24:32.526104",
+ "modified_by": "Administrator",
+ "module": "QMS Core",
+ "name": "Training Participants",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

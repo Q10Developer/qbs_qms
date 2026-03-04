@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "autoname": "format:{audit_plan_id}",
+ "creation": "2026-02-21 10:46:11.816589",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9ehk",
+  "audit_plan_id",
+  "audit_program",
+  "company",
+  "amended_from",
+  "lead_auditor",
+  "audit_type",
+  "planned_start_date",
+  "planned_end_date",
+  "actual_start_date",
+  "actual_end_date",
+  "status",
+  "workflow_state",
+  "section_break_kbkv",
+  "audit_plan_scope",
+  "section_break_pijo",
+  "overall_conclusion",
+  "number_of_findings",
+  "number_of_major_nc",
+  "number_of_minor_nc"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9ehk",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "audit_plan_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Audit Plan ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audit_program",
+   "fieldtype": "Link",
+   "label": "Audit Program",
+   "options": "Audit Program",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audit Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "lead_auditor",
+   "fieldtype": "Link",
+   "label": "Lead Auditor",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audit_type",
+   "fieldtype": "Select",
+   "label": "Audit Type",
+   "options": "Internal\nSupplier\nSurveillance\nRe-Audit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_start_date",
+   "fieldtype": "Date",
+   "label": "Planned Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_end_date",
+   "fieldtype": "Date",
+   "label": "Planned End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_start_date",
+   "fieldtype": "Date",
+   "label": "Actual Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_end_date",
+   "fieldtype": "Date",
+   "label": "Actual End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nIn Progress\nCompleted\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_kbkv",
+   "fieldtype": "Section Break",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "audit_plan_scope",
+   "fieldtype": "Table",
+   "label": "Audit Plan Scope",
+   "options": "Audit Plan Scope",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_pijo",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "overall_conclusion",
+   "fieldtype": "Small Text",
+   "label": "Overall Conclusions"
+  },
+  {
+   "fieldname": "number_of_findings",
+   "fieldtype": "Int",
+   "label": "Number of findings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "number_of_major_nc",
+   "fieldtype": "Int",
+   "label": "Number of major NCs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "number_of_minor_nc",
+   "fieldtype": "Int",
+   "label": "Number of minor NCs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow State"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-23 18:16:32.885713",
+ "modified_by": "Administrator",
+ "module": "Audit Management",
+ "name": "Audit Plan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

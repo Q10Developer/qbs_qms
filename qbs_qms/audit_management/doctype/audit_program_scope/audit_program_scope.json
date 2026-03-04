@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-21 10:09:41.567918",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qms_process",
+  "iso_clause",
+  "frequency",
+  "last_audit_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "qms_process",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Process",
+   "options": "QMS Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "iso_clause",
+   "fieldtype": "Link",
+   "label": "ISO Clause",
+   "options": "ISO Clause",
+   "reqd": 1
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "Daily\nWeekly\nMonthly\nQuarterly\nHalf Yearly\nYearly",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_audit_date",
+   "fieldtype": "Date",
+   "label": "Last Audit Date",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-21 12:27:47.700347",
+ "modified_by": "Administrator",
+ "module": "Audit Management",
+ "name": "Audit Program Scope",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-20 20:35:48.882199",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hvd9",
+  "program_id",
+  "company",
+  "audit_year",
+  "program_owner",
+  "approval_status",
+  "effective_from",
+  "effective_to",
+  "section_break_jhpf",
+  "audit_objective",
+  "audit_scope_description",
+  "audit_criteria",
+  "risk_based_justification",
+  "amended_from",
+  "section_break_fgcs",
+  "high_risk_processes",
+  "changes_since_last_cycle",
+  "previous_audit_performance_review",
+  "section_break_yats",
+  "program_scope",
+  "section_break_mywh",
+  "total_planned_audits",
+  "total_completed_audits",
+  "program_effectiveness_comment",
+  "section_break_ikly",
+  "approved_by",
+  "approval_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hvd9",
+   "fieldtype": "Section Break",
+   "label": "Program Identification"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audit_year",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Audit Year",
+   "options": "2025\n2026\n2027\n2028",
+   "reqd": 1
+  },
+  {
+   "fieldname": "program_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program Owner",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "program_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Program ID",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "Draft\nApproved\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "effective_from",
+   "fieldtype": "Date",
+   "label": "Effective From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "effective_to",
+   "fieldtype": "Date",
+   "label": "Effective To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_jhpf",
+   "fieldtype": "Section Break",
+   "label": "Audit Strategy"
+  },
+  {
+   "fieldname": "audit_objective",
+   "fieldtype": "Small Text",
+   "label": "Audit Objective",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audit_scope_description",
+   "fieldtype": "Small Text",
+   "label": "Audit Scope Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audit_criteria",
+   "fieldtype": "Small Text",
+   "label": "Audit Criteria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_based_justification",
+   "fieldtype": "Small Text",
+   "label": "Risk Based Justification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audit Program",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_fgcs",
+   "fieldtype": "Section Break",
+   "label": "Risk Consideration"
+  },
+  {
+   "default": "0",
+   "fieldname": "high_risk_processes",
+   "fieldtype": "Check",
+   "label": "High Risk Processes Included"
+  },
+  {
+   "fieldname": "changes_since_last_cycle",
+   "fieldtype": "Small Text",
+   "label": "Changes Since Last Cycle"
+  },
+  {
+   "fieldname": "previous_audit_performance_review",
+   "fieldtype": "Small Text",
+   "label": "Previous Audit Performance Review"
+  },
+  {
+   "fieldname": "section_break_yats",
+   "fieldtype": "Section Break",
+   "label": "Scope of Program"
+  },
+  {
+   "fieldname": "program_scope",
+   "fieldtype": "Table",
+   "label": "Program Scope",
+   "options": "Audit Program Scope",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_mywh",
+   "fieldtype": "Section Break",
+   "label": "Program Metrics"
+  },
+  {
+   "fieldname": "total_planned_audits",
+   "fieldtype": "Int",
+   "label": "Total Planned Audit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_completed_audits",
+   "fieldtype": "Int",
+   "label": "Total Completed Audits",
+   "read_only": 1
+  },
+  {
+   "fieldname": "program_effectiveness_comment",
+   "fieldtype": "Small Text",
+   "label": "Program Effectiveness Comment"
+  },
+  {
+   "fieldname": "section_break_ikly",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nActive\nClosed",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-23 18:07:39.460190",
+ "modified_by": "Administrator",
+ "module": "Audit Management",
+ "name": "Audit Program",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

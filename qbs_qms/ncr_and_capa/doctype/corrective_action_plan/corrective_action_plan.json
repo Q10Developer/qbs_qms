@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{capa_id}-{#####}",
+ "creation": "2026-02-21 10:55:22.865963",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xmvo",
+  "capa_id",
+  "linked_nonconformity",
+  "company",
+  "capa_owner",
+  "initiation_date",
+  "target_completion_date",
+  "status",
+  "amended_from",
+  "priority",
+  "workflow_state",
+  "section_break_sojp",
+  "action_plan_summary",
+  "preventive_measures_identified",
+  "section_break_ikgz",
+  "capa_actions",
+  "section_break_lsrh",
+  "effectiveness_review",
+  "verified_by",
+  "verification_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xmvo",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "capa_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CAPA ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "linked_nonconformity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Nonconformity",
+   "options": "Nonconformity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "capa_owner",
+   "fieldtype": "Link",
+   "label": "CAPA Owner",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "initiation_date",
+   "fieldtype": "Date",
+   "label": "Initiation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nIn Progress\nCompleted\nVerified\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Corrective Action Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_sojp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "action_plan_summary",
+   "fieldtype": "Small Text",
+   "label": "Action Plan Summary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "preventive_measures_identified",
+   "fieldtype": "Small Text",
+   "label": "Preventive Measures Identified"
+  },
+  {
+   "fieldname": "section_break_ikgz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "capa_actions",
+   "fieldtype": "Table",
+   "label": "CAPA Actions",
+   "options": "CAPA Action",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_lsrh",
+   "fieldtype": "Section Break",
+   "label": "Effectiveness Review"
+  },
+  {
+   "fieldname": "effectiveness_review",
+   "fieldtype": "Small Text",
+   "label": "Effectiveness Review"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "QMS User"
+  },
+  {
+   "fieldname": "verification_date",
+   "fieldtype": "Date",
+   "label": "Verification Date"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow State"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-23 18:46:53.113651",
+ "modified_by": "Administrator",
+ "module": "NCR and CAPA",
+ "name": "Corrective Action Plan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

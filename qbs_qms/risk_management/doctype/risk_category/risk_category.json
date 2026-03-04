@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{category_code}",
+ "creation": "2026-02-20 17:21:26.675172",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_identification_section",
+  "category_code",
+  "category_name",
+  "section_break_wzde",
+  "risk_type",
+  "applicable_to",
+  "section_break_olfy",
+  "default_risk_owner",
+  "review_frequency",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_identification_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Identification"
+  },
+  {
+   "fieldname": "category_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wzde",
+   "fieldtype": "Section Break",
+   "label": "Classification"
+  },
+  {
+   "fieldname": "risk_type",
+   "fieldtype": "Select",
+   "label": "Risk Type",
+   "options": "Strategic\nOperational\nCompliance\nFinancial\nReputational\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "applicable_to",
+   "fieldtype": "Select",
+   "label": "Applicable to",
+   "options": "Process\nProduct\nSystem\nSupplier\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_olfy",
+   "fieldtype": "Section Break",
+   "label": "Governance"
+  },
+  {
+   "fieldname": "default_risk_owner",
+   "fieldtype": "Link",
+   "label": "Default Risk Owner",
+   "options": "QMS User"
+  },
+  {
+   "fieldname": "review_frequency",
+   "fieldtype": "Select",
+   "label": "Review Frequency",
+   "options": "Monthly\nQuarterly\nHalf Yearly\nYearly"
+  },
+  {
+   "default": "Active",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-20 17:29:33.589633",
+ "modified_by": "Administrator",
+ "module": "Risk Management",
+ "name": "Risk Category",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

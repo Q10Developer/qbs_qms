@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{process_code}-{#####}",
+ "creation": "2026-02-19 14:34:17.064943",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "process_name",
+  "process_code",
+  "company",
+  "department",
+  "process_owner",
+  "purpose",
+  "inputs",
+  "outputs",
+  "upstream_processes",
+  "downstream_processes",
+  "iso_clauses",
+  "kpis",
+  "process_link"
+ ],
+ "fields": [
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Process Name",
+   "options": "Process Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_code",
+   "fieldtype": "Link",
+   "label": "Process Code",
+   "options": "Process Master"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_owner",
+   "fieldtype": "Link",
+   "label": "Process Owner",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "inputs",
+   "fieldtype": "Small Text",
+   "label": "Inputs"
+  },
+  {
+   "fieldname": "outputs",
+   "fieldtype": "Small Text",
+   "label": "Outputs"
+  },
+  {
+   "fieldname": "upstream_processes",
+   "fieldtype": "Table",
+   "label": "Upstream Processes",
+   "options": "Process Link"
+  },
+  {
+   "fieldname": "downstream_processes",
+   "fieldtype": "Table",
+   "label": "Downstream Processes",
+   "options": "Process Link"
+  },
+  {
+   "fieldname": "iso_clauses",
+   "fieldtype": "Table",
+   "label": "ISO Clauses",
+   "options": "Process ISO Clause",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kpis",
+   "fieldtype": "Table",
+   "label": "KPI List",
+   "options": "Process KPI"
+  },
+  {
+   "fieldname": "process_link",
+   "fieldtype": "Table",
+   "label": "Process Link",
+   "options": "Process Link"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-02 14:25:25.559738",
+ "modified_by": "Administrator",
+ "module": "QMS Core",
+ "name": "QMS Process",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

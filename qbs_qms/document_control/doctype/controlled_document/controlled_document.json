@@ -1,0 +1,248 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-18 22:32:20.166367",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qcpa",
+  "amended_from",
+  "document_code",
+  "document_title",
+  "company",
+  "department",
+  "qms_process",
+  "document_type",
+  "iso_clause",
+  "section_break_hsdi",
+  "revision_no",
+  "revision_date",
+  "prepared_by",
+  "reviewed_by",
+  "approved_by",
+  "effective_date",
+  "next_review_date",
+  "previous_revision",
+  "section_break_bvyj",
+  "document_file",
+  "document_content",
+  "change_description",
+  "section_break_tlpe",
+  "status",
+  "distribution_required",
+  "controlled_copy",
+  "section_break_kcga",
+  "acknowledgement"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Controlled Document",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "document_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_qcpa",
+   "fieldtype": "Section Break",
+   "label": "Section A: Basic Details"
+  },
+  {
+   "fieldname": "qms_process",
+   "fieldtype": "Link",
+   "label": "Process",
+   "options": "QMS Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "Policy\nSOP\nWI\nForm\nRecord\nManual\nTemplate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "iso_clause",
+   "fieldtype": "Table",
+   "label": "ISO Clauses",
+   "options": "Process ISO Clause",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hsdi",
+   "fieldtype": "Section Break",
+   "label": "Section B: Version Control"
+  },
+  {
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "Revision No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "revision_date",
+   "fieldtype": "Date",
+   "label": "Revision Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bvyj",
+   "fieldtype": "Section Break",
+   "label": "Section C: File and Content"
+  },
+  {
+   "fieldname": "document_file",
+   "fieldtype": "Attach",
+   "label": "Document File",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_content",
+   "fieldtype": "Text Editor",
+   "label": "Document Content",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_description",
+   "fieldtype": "Small Text",
+   "label": "Change Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_tlpe",
+   "fieldtype": "Section Break",
+   "label": "Section D: Control Fields"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nUnder Review\nApproved\nReleased\nObsolete",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "distribution_required",
+   "fieldtype": "Check",
+   "label": "Distribution Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "controlled_copy",
+   "fieldtype": "Check",
+   "label": "Controlled Copy"
+  },
+  {
+   "fieldname": "section_break_kcga",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "acknowledgement",
+   "fieldtype": "Table",
+   "label": "Acknowlegement",
+   "options": "Document Acknowledgement"
+  },
+  {
+   "fieldname": "previous_revision",
+   "fieldtype": "Link",
+   "label": "Previous Revision",
+   "options": "Controlled Document"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-21 17:13:08.540802",
+ "modified_by": "Administrator",
+ "module": "Document Control",
+ "name": "Controlled Document",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

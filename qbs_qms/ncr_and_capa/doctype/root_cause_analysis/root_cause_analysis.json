@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-21 10:54:46.013915",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "root_cause_statement",
+  "method_used"
+ ],
+ "fields": [
+  {
+   "fieldname": "root_cause_statement",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Root Cause Statement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "method_used",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Method Used",
+   "options": "5WHYs\nFishbone\nOthers",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-21 12:38:31.414643",
+ "modified_by": "Administrator",
+ "module": "NCR and CAPA",
+ "name": "Root Cause Analysis",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

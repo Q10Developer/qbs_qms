@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-18 21:17:52.805992",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "process_link",
+  "interaction_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "process_link",
+   "fieldtype": "Link",
+   "label": "Process Link",
+   "options": "QMS Process"
+  },
+  {
+   "fieldname": "interaction_type",
+   "fieldtype": "Select",
+   "label": "Interaction Type",
+   "options": "Input\nOutput\nSupport\nControl"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-19 15:26:10.839436",
+ "modified_by": "Administrator",
+ "module": "QMS Core",
+ "name": "Process Link",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

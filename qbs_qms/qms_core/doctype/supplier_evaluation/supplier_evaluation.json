@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{supplier_name}-{supplier_category}-{#####}",
+ "creation": "2026-02-21 15:48:45.640924",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_plva",
+  "amended_from",
+  "evaluation_id",
+  "company",
+  "supplier_name",
+  "supplier_category",
+  "evaluation_type",
+  "evaluation_date",
+  "evaluation_by",
+  "status",
+  "workflow_state",
+  "section_break_wofe",
+  "evaluation_criteria",
+  "section_break_lput",
+  "total_score",
+  "approval_decision",
+  "next_review_date",
+  "risk_level",
+  "comment",
+  "section_break_vkgn",
+  "improvement_required",
+  "corrective_action_required",
+  "linked_nonconformity"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_plva",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Supplier Evaluation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "evaluation_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Evaluation ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier_category",
+   "fieldtype": "Select",
+   "label": "Supplier Category",
+   "options": "Raw Material\nPackaging\nService\nContractor\nOutsourced Process\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "evaluation_type",
+   "fieldtype": "Select",
+   "label": "Evaluation Type",
+   "options": "Initial\nPeriodic\nRe-evaluation\nSpecial Review",
+   "reqd": 1
+  },
+  {
+   "fieldname": "evaluation_date",
+   "fieldtype": "Date",
+   "label": "Evaluation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "evaluation_by",
+   "fieldtype": "Link",
+   "label": "Evaluation By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nApproved\nApproved with Conditions\nRejected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wofe",
+   "fieldtype": "Section Break",
+   "label": "Supplier Evaluation Criteria"
+  },
+  {
+   "fieldname": "evaluation_criteria",
+   "fieldtype": "Table",
+   "label": "Evaluation Criteria",
+   "options": "Supplier Evaluation Criteria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_lput",
+   "fieldtype": "Section Break",
+   "label": "Overall Result"
+  },
+  {
+   "fieldname": "total_score",
+   "fieldtype": "Float",
+   "label": "Total Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_decision",
+   "fieldtype": "Select",
+   "label": "Approval Decision",
+   "options": "Approved\nConditional Approval\nNot Approved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_level",
+   "fieldtype": "Select",
+   "label": "Risk Level",
+   "options": "Low\nMedium\nHigh",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "section_break_vkgn",
+   "fieldtype": "Section Break",
+   "label": "Followup"
+  },
+  {
+   "default": "0",
+   "fieldname": "improvement_required",
+   "fieldtype": "Check",
+   "label": "Improvement required"
+  },
+  {
+   "default": "0",
+   "fieldname": "corrective_action_required",
+   "fieldtype": "Check",
+   "label": "Corrective Action Required"
+  },
+  {
+   "fieldname": "linked_nonconformity",
+   "fieldtype": "Link",
+   "label": "Linked Nonconformity",
+   "options": "Nonconformity"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow State"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-23 18:50:54.428754",
+ "modified_by": "Administrator",
+ "module": "QMS Core",
+ "name": "Supplier Evaluation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

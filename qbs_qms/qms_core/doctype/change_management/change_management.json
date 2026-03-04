@@ -1,0 +1,270 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-21 16:38:58.293026",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xle1",
+  "amended_from",
+  "change_id",
+  "company",
+  "change_title",
+  "change_type",
+  "qms_process",
+  "related_document",
+  "initiated_by",
+  "initiation_date",
+  "proposed_implementation_date",
+  "status",
+  "workflow_state",
+  "section_break_ulah",
+  "reason_for_change",
+  "objective_of_change",
+  "expected_benefits",
+  "section_break_brhy",
+  "impact_on_quality",
+  "impact_on_resoures",
+  "impact_on_customers",
+  "risk_assessment_required",
+  "linked_risk_register",
+  "section_break_oesy",
+  "change_action_plan",
+  "section_break_lhfm",
+  "approved_by",
+  "approval_date",
+  "implemented_by",
+  "effectiveness_verified",
+  "verification_date",
+  "closure_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xle1",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Change Management",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "change_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Change ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_title",
+   "fieldtype": "Data",
+   "label": "Change Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_type",
+   "fieldtype": "Select",
+   "label": "Change Type",
+   "options": "Process\nProduct\nOrganizational\nSupplier\nSystem\nDocumentation\nRegulatory\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qms_process",
+   "fieldtype": "Link",
+   "label": "Related Main Process",
+   "options": "QMS Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "related_document",
+   "fieldtype": "Link",
+   "label": "Related Document",
+   "options": "Controlled Document"
+  },
+  {
+   "fieldname": "initiated_by",
+   "fieldtype": "Link",
+   "label": "Initiated By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "initiation_date",
+   "fieldtype": "Date",
+   "label": "Initiation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "proposed_implementation_date",
+   "fieldtype": "Date",
+   "label": "Proposed Implementation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Proposed\nUnder Review\nApproved\nImplemented\nClosed\nRejected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ulah",
+   "fieldtype": "Section Break",
+   "label": "Change Justification"
+  },
+  {
+   "fieldname": "reason_for_change",
+   "fieldtype": "Small Text",
+   "label": "Reason for change",
+   "reqd": 1
+  },
+  {
+   "fieldname": "objective_of_change",
+   "fieldtype": "Small Text",
+   "label": "Objective of change",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_benefits",
+   "fieldtype": "Small Text",
+   "label": "Expected Benefits"
+  },
+  {
+   "fieldname": "section_break_brhy",
+   "fieldtype": "Section Break",
+   "label": "Risk and Impact"
+  },
+  {
+   "fieldname": "impact_on_quality",
+   "fieldtype": "Small Text",
+   "label": "Impact on quality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "impact_on_resoures",
+   "fieldtype": "Small Text",
+   "label": "Impact on Resources",
+   "reqd": 1
+  },
+  {
+   "fieldname": "impact_on_customers",
+   "fieldtype": "Small Text",
+   "label": "Impact on customers",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "risk_assessment_required",
+   "fieldtype": "Check",
+   "label": "Risk Assessment Required"
+  },
+  {
+   "fieldname": "linked_risk_register",
+   "fieldtype": "Link",
+   "label": "Linked Risk Register ",
+   "options": "Risk Register"
+  },
+  {
+   "fieldname": "section_break_oesy",
+   "fieldtype": "Section Break",
+   "label": "Change Action Plan"
+  },
+  {
+   "fieldname": "change_action_plan",
+   "fieldtype": "Table",
+   "label": "Change Action Plan",
+   "options": "Change Action Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_lhfm",
+   "fieldtype": "Section Break",
+   "label": "Approval and Verification"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "implemented_by",
+   "fieldtype": "Date",
+   "label": "Implemented By",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "effectiveness_verified",
+   "fieldtype": "Check",
+   "label": "Effectiveness Verified"
+  },
+  {
+   "fieldname": "verification_date",
+   "fieldtype": "Date",
+   "label": "Verification Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "closure_remarks",
+   "fieldtype": "Small Text",
+   "label": "Closure Remarks"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow State"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-23 19:23:06.423929",
+ "modified_by": "Administrator",
+ "module": "QMS Core",
+ "name": "Change Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

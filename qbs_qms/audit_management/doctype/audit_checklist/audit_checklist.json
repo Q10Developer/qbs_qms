@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-21 10:48:26.425762",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_q9fu",
+  "audit_plan",
+  "qms_process",
+  "iso_clause",
+  "auditor",
+  "audit_date",
+  "amended_from",
+  "audit_checklist_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_q9fu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "audit_plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Audit Plan",
+   "options": "Audit Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qms_process",
+   "fieldtype": "Link",
+   "label": "Process",
+   "options": "QMS Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "iso_clause",
+   "fieldtype": "Link",
+   "label": "ISO Clause",
+   "options": "ISO Clause",
+   "reqd": 1
+  },
+  {
+   "fieldname": "auditor",
+   "fieldtype": "Link",
+   "label": "Auditor",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "label": "Audit Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audit Checklist",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "audit_checklist_item",
+   "fieldtype": "Table",
+   "label": "Audit Checklist Item",
+   "options": "Audit Checklist Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-21 13:42:32.567105",
+ "modified_by": "Administrator",
+ "module": "Audit Management",
+ "name": "Audit Checklist",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

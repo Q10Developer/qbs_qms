@@ -1,1 +1,9 @@
+
 qbs_qms
+QMS Core
+Document Control
+Risk Management
+NCR and CAPA
+Audit Management
+Management Review
+QMS Analytics

@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-20 20:55:50.314593",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_k0na",
+  "review_id",
+  "company",
+  "review_date",
+  "review_period_from",
+  "review_period_to",
+  "meeting_chairperson",
+  "minutes_prepared_by",
+  "status",
+  "amended_from",
+  "section_break_bepb",
+  "audit_results_summary",
+  "customer_feedback_summary",
+  "kpi_performance_summary",
+  "risk_opportunity_review",
+  "resource_adequacy_review",
+  "previous_action_status",
+  "agenda_discussion",
+  "action_items",
+  "section_break_jicg",
+  "overall_qms_effectiveness",
+  "strategic_direction_changes",
+  "next_review_due_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_k0na",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "review_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Review ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "QMS Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "review_date",
+   "fieldtype": "Date",
+   "label": "Review Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "review_period_from",
+   "fieldtype": "Date",
+   "label": "Review Period From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "review_period_to",
+   "fieldtype": "Date",
+   "label": "Review Period To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_chairperson",
+   "fieldtype": "Link",
+   "label": "Meeting Chairperson",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "minutes_prepared_by",
+   "fieldtype": "Link",
+   "label": "Minutes Prepared By",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nConducted\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Management Review Meeting",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_bepb",
+   "fieldtype": "Section Break",
+   "label": "Review Inputs - High Level"
+  },
+  {
+   "fieldname": "audit_results_summary",
+   "fieldtype": "Small Text",
+   "label": "Audit Results Summary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_feedback_summary",
+   "fieldtype": "Small Text",
+   "label": "Customer Feedback Summary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kpi_performance_summary",
+   "fieldtype": "Small Text",
+   "label": "KPI Performance Summary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_opportunity_review",
+   "fieldtype": "Small Text",
+   "label": "Risk and Opportunities Review",
+   "reqd": 1
+  },
+  {
+   "fieldname": "resource_adequacy_review",
+   "fieldtype": "Small Text",
+   "label": "Resource Adequacy Review",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_action_status",
+   "fieldtype": "Small Text",
+   "label": "Previous Action Status",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agenda_discussion",
+   "fieldtype": "Table",
+   "label": "Agenda Discussion",
+   "options": "Review Agenda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "action_items",
+   "fieldtype": "Table",
+   "label": "Action Items",
+   "options": "Review Action",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_jicg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overall_qms_effectiveness",
+   "fieldtype": "Select",
+   "label": "Overall QMS Effectiveness",
+   "options": "Effective\nNeeds Improvement\nMajor Concern",
+   "reqd": 1
+  },
+  {
+   "fieldname": "strategic_direction_changes",
+   "fieldtype": "Small Text",
+   "label": "Strategic Direction Changes"
+  },
+  {
+   "fieldname": "next_review_due_date",
+   "fieldtype": "Date",
+   "label": "Next Review Due Date",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-21 14:08:24.269358",
+ "modified_by": "Administrator",
+ "module": "Management Review",
+ "name": "Management Review Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

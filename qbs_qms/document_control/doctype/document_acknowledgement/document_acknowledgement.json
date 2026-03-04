@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-18 22:28:04.218057",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "department",
+  "acknowledged",
+  "acknowledgement_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "QMS User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "acknowledged",
+   "fieldtype": "Check",
+   "label": "Acknowledged"
+  },
+  {
+   "fieldname": "acknowledgement_on",
+   "fieldtype": "Datetime",
+   "label": "Acknowledgement On"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-19 14:51:36.196145",
+ "modified_by": "Administrator",
+ "module": "Document Control",
+ "name": "Document Acknowledgement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
